@@ -10,7 +10,7 @@ This section provides a quick overview for working with the SfDataGrid for .NET 
 
  
 
-```C#
+```xml
 <ContentPage   
     . . .
     xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid">
@@ -173,7 +173,7 @@ To bind the data source to the SfDataGrid, set the [SfDataGrid.ItemsSource](http
 
 The following code example binds the collection created in the previous step to the `SfDataGrid.ItemsSource` property:
 
-```C#
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
