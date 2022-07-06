@@ -9,7 +9,7 @@
         <local:OrderInfoRepository x:Name="ViewModel"/>
     </ContentPage.BindingContext>
 
-    <syncfusion:SfDataGrid x:Name="dataGrid" ColumnWidthMode="Auto"
+    <syncfusion:SfDataGrid x:Name="dataGrid" 
                                ItemsSource="{Binding OrderInfoCollection}" >
      
     </syncfusion:SfDataGrid>
