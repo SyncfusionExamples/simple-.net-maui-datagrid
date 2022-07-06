@@ -8,19 +8,20 @@ This section provides a quick overview for working with the SfDataGrid for .NET 
  3. Import the control namespace `Syncfusion.Maui.DataGrid` in XAML or C# code.
  4. Initialize the [SfDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) control.
 
- {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" %}
+ 
 
+```xml
 <ContentPage   
     . . .
     xmlns:syncfusion="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid">
 
     <syncfusion:SfDataGrid />
 </ContentPage>
+```
 
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" %}
 
+
+```C#
 using Syncfusion.Maui.DataGrid;
 . . .
 
@@ -33,16 +34,13 @@ public partial class MainPage : ContentPage
         this.Content = dataGrid;
     }
 }
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Register the handler
 
 To use this control inside an application, you must initialize the `SfDataGrid` handler.
 
-{% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="4 5 21 22" %}
+```C#
 
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Controls.Xaml;
@@ -70,8 +68,7 @@ namespace GettingStarted
         }
     }
 }
-{% endhighlight %} 
-{% endtabs %}
+```
 
 
 ## Create DataModel for the SfDataGrid
@@ -80,7 +77,7 @@ The SfDataGrid is a data-bound control. Hence, a data model should be created to
 
 Create a simple data source as shown in the following code example in a new class file, and save it as OrderInfo.cs file:
 
-{% highlight c# %}
+```C#
 public class OrderInfo
 {
     private string orderID;
@@ -127,14 +124,14 @@ public class OrderInfo
         this.ShipCountry = country;
         this.ShipCity = shipCity;
     }
-} 
-{% endhighlight %}
+}
+```
 
-N> If you want your data model to respond to property changes, implement the `INotifyPropertyChanged` interface in your model class.
+> **_NOTE:_** If you want your data model to respond to property changes, implement the `INotifyPropertyChanged` interface in your model class.
 
 Create a model repository class with OrderInfo collection property initialized with the required number of data objects in a new class file as shown in the following code example and save it as OrderInfoRepository.cs file:
 
-{% highlight c# %}
+```C#
 public class OrderInfoRepository
 {
     private ObservableCollection<OrderInfo> orderInfo;
@@ -168,7 +165,7 @@ public class OrderInfoRepository
         orderInfo.Add(new OrderInfo("1014", "Gina Irene", "UK", "AROUT", "London"));
     }
 }
-{% endhighlight %}
+```
 
 ## Binding data to the SfDataGrid
 
@@ -176,8 +173,7 @@ To bind the data source to the SfDataGrid, set the [SfDataGrid.ItemsSource](http
 
 The following code example binds the collection created in the previous step to the `SfDataGrid.ItemsSource` property:
 
-{% tabs %}
-{% highlight xaml %}
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -195,12 +191,11 @@ The following code example binds the collection created in the previous step to 
         </syncfusion:SfDataGrid>
     </ContentPage.Content>
 </ContentPage>
-{% endhighlight %}
-{% highlight c# %}
+```
+```C#
 OrderInfoRepository viewModel = new OrderInfoRepository();
 dataGrid.ItemsSource = viewModel.OrderInfoCollection; 
-{% endhighlight %}
-{% endtabs %}
+```
 
 Run the application to render the following output:
 
