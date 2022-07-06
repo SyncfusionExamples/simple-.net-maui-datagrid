@@ -127,7 +127,7 @@ public class OrderInfo
 }
 ```
 
-N> If you want your data model to respond to property changes, implement the `INotifyPropertyChanged` interface in your model class.
+> **_NOTE:_** If you want your data model to respond to property changes, implement the `INotifyPropertyChanged` interface in your model class.
 
 Create a model repository class with OrderInfo collection property initialized with the required number of data objects in a new class file as shown in the following code example and save it as OrderInfoRepository.cs file:
 
