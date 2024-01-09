@@ -46,7 +46,6 @@ using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Controls.Xaml;
 using Microsoft.Maui.Hosting;
 using Syncfusion.Maui.Core.Hosting;
-using Syncfusion.Maui.DataGrid.Hosting;
 
 namespace GettingStarted
 {
@@ -63,7 +62,6 @@ namespace GettingStarted
                 });
 
            builder.ConfigureSyncfusionCore();
-           builder.ConfigureSyncfusionDataGrid();
            return builder.Build();
         }
     }

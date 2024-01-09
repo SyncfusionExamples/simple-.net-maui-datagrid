@@ -9,37 +9,37 @@ namespace GettingStarted
 {
     public class OrderInfo
     {
-        private string orderID;
-        private string customerID;
-        private string customer;
-        private string shipCity;
-        private string shipCountry;
+        private string? orderID;
+        private string? customerID;
+        private string? customer;
+        private string? shipCity;
+        private string? shipCountry;
 
-        public string OrderID
+        public string? OrderID
         {
             get { return orderID; }
             set { this.orderID = value; }
         }
 
-        public string CustomerID
+        public string? CustomerID
         {
             get { return customerID; }
             set { this.customerID = value; }
         }
 
-        public string ShipCountry
+        public string? ShipCountry
         {
             get { return shipCountry; }
             set { this.shipCountry = value; }
         }
 
-        public string Customer
+        public string? Customer
         {
             get { return this.customer; }
             set { this.customer = value; }
         }
 
-        public string ShipCity
+        public string? ShipCity
         {
             get { return shipCity; }
             set { this.shipCity = value; }
