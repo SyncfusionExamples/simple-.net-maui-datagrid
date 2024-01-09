@@ -1,9 +1,10 @@
-﻿namespace GettingStarted;
-
-public partial class AppShell : Shell
+﻿namespace GettingStarted
 {
-	public AppShell()
-	{
-		InitializeComponent();
-	}
+    public partial class AppShell : Shell
+    {
+        public AppShell()
+        {
+            InitializeComponent();
+        }
+    }
 }
