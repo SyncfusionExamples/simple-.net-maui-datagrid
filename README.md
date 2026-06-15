@@ -1,6 +1,6 @@
-# Getting Started with .NET MAUI DataGrid (SfDataGrid)
+# Getting Started with .NET MAUI DataGrid
 
-This section provides a quick overview for working with the SfDataGrid for .NET MAUI. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for working with the .NET MAUI DataGrid. Walk through the entire process of creating a real world of this control.
 
 ## Creating an application using the .NET MAUI DataGrid
  1. Create a new .NET MAUI application in Visual Studio.
